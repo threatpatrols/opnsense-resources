@@ -1,0 +1,57 @@
+
+[tool.slap.run]
+docs-dev = """set -e; \
+    uv run --active -- bash -xc 'mkdocs serve'
+"""
+docs-build = """set -e; \
+    uv run --active -- bash -xc 'mkdocs build'
+"""
+
+[project]
+name = "docs"
+version = "0.1.0"
+description = "Threat Patrols Docs"
+readme = "README.md"
+requires-python = ">=3.10, <4"
+
+dependencies = [
+    "babel",
+    "certifi",
+    "charset-normalizer",
+    "click",
+    "colorama",
+    "ghp-import",
+    "griffe",
+    "idna",
+    "jinja2",
+    "markdown",
+    "markupsafe",
+    "mergedeep",
+    "mkdocs",
+    "mkdocs-autorefs",
+    "mkdocs-material",
+    "mkdocs-material-extensions",
+    "mkdocs-minify-plugin",
+    "mkdocs-redirects",
+    "mkdocstrings",
+    "mkdocstrings-python",
+    "mksync",
+    "networkx",
+    "packaging",
+    "paginate",
+    "pathspec",
+    "platformdirs",
+    "pygments",
+    "pymdown-extensions",
+    "python-adjudicator",
+    "python-dateutil",
+    "pyyaml",
+    "pyyaml-env-tag",
+    "regex",
+    "requests",
+    "six",
+    "typeapi",
+    "typing-extensions",
+    "urllib3",
+    "watchdog",
+]
